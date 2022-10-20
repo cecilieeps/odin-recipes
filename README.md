@@ -1,1 +1,2 @@
 # odin-recipes
+For my first project in web development I will create a website consisting of 4 webpages; three of which will contain recipes. I will deepen my knowledge on the use of headings and lists and familiarize myself with the Git workflow. 

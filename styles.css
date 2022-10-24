@@ -1,0 +1,38 @@
+a {
+    /* Change color of the links on homepage*/
+    color: white;
+    background-color: black;
+    font-size: 22px;
+}
+
+img {
+    height: auto;
+    width: 400px
+}
+
+/* .homepage is a class and hence has higher specificity than using element type body */
+.homepage {
+    background-image: url("img/dndblackbg.jpeg");
+    background-size: cover;
+}
+
+body {
+    color: black;
+    background-color: black;
+}
+
+.sitetitle {
+    color: aliceblue;
+    font-size: 60px;
+}
+
+h1 {
+    color: rgb(245, 184, 237);
+    font-family: "Courier New", "Lucida Console", "Monaco";
+    font-weight: 200;
+    font-size: 45px;
+}
+
+.ingredients {
+    color: rgb(251, 183, 252);
+}

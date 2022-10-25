@@ -1,38 +1,91 @@
-a {
-    /* Change color of the links on homepage*/
-    color: white;
-    background-color: black;
-    font-size: 22px;
-}
-
 img {
     height: auto;
     width: 400px
 }
 
-/* .homepage is a class and hence has higher specificity than using element type body */
-.homepage {
-    background-image: url("img/dndblackbg.jpeg");
-    background-size: cover;
-}
-
 body {
-    color: black;
+    color: white;
     background-color: black;
-}
-
-.sitetitle {
-    color: aliceblue;
-    font-size: 60px;
+    font-size: 18px;
 }
 
 h1 {
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 600px;
     color: rgb(245, 184, 237);
     font-family: "Courier New", "Lucida Console", "Monaco";
     font-weight: 200;
     font-size: 45px;
 }
 
+.homepagelist a {
+    font-family: "Courier New", "Lucida Console", "Monaco";
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.steps {
+    width: 400px;
+    height: 350px;
+    border: 2px dashed white;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-heading, .ingredients-heading {
+    text-align: center;
+}
+
+/* .homepage is a class and hence has higher specificity than using element type body */
+.homepage {
+    background-image: url("img/dndblackbg.jpeg");
+    background-size: repeat;
+    marker: none;
+}
+
+#welcome-message {
+    inline-size: 300px;
+    block-size: 70px;
+    border: 2px solid rgb(171, 94, 223);
+    color: whitesmoke;
+    padding: 2em;
+    margin: 30px;
+}
+
+#sitetitle {
+    color: aliceblue;
+    font-size: 60px;
+}
+
 .ingredients {
-    color: rgb(251, 183, 252);
+    inline-size: 120px;
+    block-size: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+
+.homepagelist {
+    /* we centered the list hence the inline box is also centered */
+    display: inline-flex; /* Creates a inline box around the items. A box is needed to avoid vertical overlap */
+    list-style: none;
+    padding: 0;
+}
+
+.homepagelist a {
+    inline-size: 250px; /* the width of the block */
+    block-size: 70px; /* the height of the block */
+    border: 2px dashed pink;
+    margin: 10px;
+    padding: 10px;
+}
+
+.homepagelist a:hover {
+    background-color: black;
+    border: 4px solid pink;
 }

@@ -1,19 +1,15 @@
 img {
     height: auto;
-    width: 400px
+    width: 500px;
 }
 
 body {
     color: white;
-    background-color: black;
+    background-color: rgb(56, 53, 56);
     font-size: 18px;
 }
 
 h1 {
-    border: 1px solid white;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 600px;
     color: rgb(245, 184, 237);
     font-family: "Courier New", "Lucida Console", "Monaco";
     font-weight: 200;
@@ -22,10 +18,14 @@ h1 {
 
 .homepagelist a {
     font-family: "Courier New", "Lucida Console", "Monaco";
-    font-size: 20px;
+    font-size: 14px;
     color: white;
-    background-color: black;
     text-decoration: none;
+
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    margin: 2px;
+    padding: 10px;
 }
 
 .steps {
@@ -33,8 +33,7 @@ h1 {
     height: 350px;
     border: 2px dashed white;
     padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .steps-heading, .ingredients-heading {
@@ -42,19 +41,24 @@ h1 {
 }
 
 /* .homepage is a class and hence has higher specificity than using element type body */
-.homepage {
-    background-image: url("img/dndblackbg.jpeg");
-    background-size: repeat;
-    marker: none;
+.home-box {
+    width: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: 20px solid whitesmoke;
+    background: rgb(134, 119, 119);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 
 #welcome-message {
     inline-size: 300px;
     block-size: 70px;
-    border: 2px solid rgb(171, 94, 223);
     color: whitesmoke;
     padding: 2em;
-    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sitetitle {
@@ -74,18 +78,8 @@ h1 {
     /* we centered the list hence the inline box is also centered */
     display: inline-flex; /* Creates a inline box around the items. A box is needed to avoid vertical overlap */
     list-style: none;
-    padding: 0;
-}
-
-.homepagelist a {
-    inline-size: 250px; /* the width of the block */
-    block-size: 70px; /* the height of the block */
-    border: 2px dashed pink;
-    margin: 10px;
-    padding: 10px;
 }
 
 .homepagelist a:hover {
-    background-color: black;
-    border: 4px solid pink;
+    border: 2px solid white;
 }

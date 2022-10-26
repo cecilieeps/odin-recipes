@@ -1,12 +1,12 @@
 img {
     height: auto;
-    width: 500px;
+    width: 400px;
 }
 
 body {
     color: white;
     background-color: rgb(56, 53, 56);
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h1 {
 
     border-left: 2px solid white;
     border-right: 2px solid white;
-    margin: 2px;
+    
+    margin: 5px;
     padding: 10px;
 }
 
@@ -42,20 +43,27 @@ h1 {
 
 /* .homepage is a class and hence has higher specificity than using element type body */
 .home-box {
-    width: 800px;
+    box-sizing: border-box;
+    width: 900px;
+    height: 1100px;
+
     padding-top: 100px;
     padding-bottom: 100px;
-    border: 20px solid whitesmoke;
+
+    border: 8px solid whitesmoke;
     background: rgb(134, 119, 119);
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #welcome-message {
-    inline-size: 300px;
-    block-size: 70px;
-    color: whitesmoke;
+    font-family: "Courier New", "Lucida Console", "Monaco";
+
+    width: 600px;
+    color: rgb(187, 184, 184);
     padding: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -75,11 +83,15 @@ h1 {
 }
 
 .homepagelist {
+    margin: 50px;
     /* we centered the list hence the inline box is also centered */
-    display: inline-flex; /* Creates a inline box around the items. A box is needed to avoid vertical overlap */
+    display: flex; /* Creates a inline box around the items. A box is needed to avoid vertical overlap */
     list-style: none;
+
 }
 
 .homepagelist a:hover {
     border: 2px solid white;
+    background: rgb(138, 115, 115);
+    font-weight: bold;
 }

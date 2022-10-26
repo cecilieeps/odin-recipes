@@ -1,6 +1,7 @@
 img {
     height: auto;
     width: 400px;
+    margin-left: 210px;
 }
 
 body {
@@ -9,11 +10,19 @@ body {
     font-size: 14px;
 }
 
-h1 {
-    color: rgb(245, 184, 237);
+.recipe-title {
+    color: whitesmoke;
     font-family: "Courier New", "Lucida Console", "Monaco";
-    font-weight: 200;
+    font-weight: bold;
     font-size: 45px;
+
+    width: 520px;
+    padding: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(109, 91, 91);
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
 }
 
 .homepagelist a {
@@ -31,14 +40,9 @@ h1 {
 
 .steps {
     width: 400px;
-    height: 350px;
-    border: 2px dashed white;
+    height: 220px;
+    border: 2px solid rgb(109, 91, 91);
     padding: 30px;
-    margin: 0 auto;
-}
-
-.steps-heading, .ingredients-heading {
-    text-align: center;
 }
 
 /* .homepage is a class and hence has higher specificity than using element type body */
@@ -75,11 +79,7 @@ h1 {
 }
 
 .ingredients {
-    inline-size: 120px;
-    block-size: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
+    font-family: ;
 }
 
 .homepagelist {
@@ -94,4 +94,28 @@ h1 {
     border: 2px solid white;
     background: rgb(138, 115, 115);
     font-weight: bold;
+}
+
+.recipe-body {
+    box-sizing: border-box;
+    width: 900px;
+    height: 1100px;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    border: 8px solid whitesmoke;
+    background: rgb(134, 119, 119);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.description {
+    color: rgb(187, 184, 184);
 }

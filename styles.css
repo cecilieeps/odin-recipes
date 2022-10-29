@@ -2,72 +2,105 @@ img {
     height: auto;
     width: 400px;
     margin-left: 210px;
+    margin-top: 20px;
 }
 
-body {
-    color: white;
-    background-color: rgb(56, 53, 56);
-    font-size: 14px;
+html {
+    background: #66545e;
 }
 
 .recipe-title {
     color: whitesmoke;
     font-family: "Courier New", "Lucida Console", "Monaco";
-    font-weight: bold;
-    font-size: 45px;
-
-    width: 520px;
-    padding: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgb(109, 91, 91);
-    border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke;
+    font-weight: none;
+    font-size: 40px;
+    text-align: center;
 }
 
-.homepagelist a {
+.homepage-list a,
+.links-box a {
     font-family: "Courier New", "Lucida Console", "Monaco";
     font-size: 14px;
     color: white;
     text-decoration: none;
-
     border-left: 2px solid white;
     border-right: 2px solid white;
-    
     margin: 5px;
     padding: 10px;
 }
 
-.steps {
+.homepage-list {
+    margin: 50px;
+    /* we centered the list hence the inline box is also centered */
+    display: flex; /* Creates an inline box around the items. A box is needed to avoid vertical overlap */
+    list-style: none;
+}
+
+.links-box {
+    margin-top: 70px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    list-style: none;
+    display: inline-block;
+}
+
+.homepage-list a:hover, 
+.links-box a:hover {
+    border: 2px solid white;
+    background: #aa6f73;
+    font-weight: bold;
+}
+
+.steps{
+    color: whitesmoke;
     width: 400px;
-    height: 220px;
-    border: 2px solid rgb(109, 91, 91);
+    height: 260px;
+    border: 2px solid #eea990;
     padding: 30px;
 }
 
-/* .homepage is a class and hence has higher specificity than using element type body */
-.home-box {
+.ingredients {
+    color: whitesmoke;
+}
+
+.homepage-body,
+.recipe-body-lembas,
+.recipe-body-butterbeer,
+.recipe-body-sugarcookies {
     box-sizing: border-box;
+    border-radius: 14px;
     width: 900px;
     height: 1100px;
-
     padding-top: 100px;
     padding-bottom: 100px;
-
-    border: 8px solid whitesmoke;
-    background: rgb(134, 119, 119);
-
+    background: #a39193;
+    border: 0px solid whitesmoke;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Since the lengths of the different recipes vary we can override the box 
+height using the individual classes*/
+.recipe-body-lembas {
+    height: 1180px;
+}
+
+.recipe-body-butterbeer {
+    height: 1430px;
+}
+
+.recipe-body-sugarcookies {
+    height: 2090px;
 }
 
 #welcome-message {
     font-family: "Courier New", "Lucida Console", "Monaco";
-
     width: 600px;
-    color: rgb(187, 184, 184);
+    color: #f6e0b5;
     padding: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -78,44 +111,8 @@ body {
     font-size: 60px;
 }
 
-.ingredients {
-    font-family: ;
-}
-
-.homepagelist {
-    margin: 50px;
-    /* we centered the list hence the inline box is also centered */
-    display: flex; /* Creates a inline box around the items. A box is needed to avoid vertical overlap */
-    list-style: none;
-
-}
-
-.homepagelist a:hover {
-    border: 2px solid white;
-    background: rgb(138, 115, 115);
-    font-weight: bold;
-}
-
-.recipe-body {
-    box-sizing: border-box;
-    width: 900px;
-    height: 1100px;
-
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 2em;
-    padding-right: 2em;
-
-    border: 8px solid whitesmoke;
-    background: rgb(134, 119, 119);
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-}
-
-.description {
-    color: rgb(187, 184, 184);
+.description, 
+h2, 
+h3 {
+    color: #f6e0b5;
 }
